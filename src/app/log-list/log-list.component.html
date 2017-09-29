@@ -1,0 +1,16 @@
+<div class="item-container">
+	<div *ngIf="item" class="list-item" [ngClass]="{'active': item.isActive, 'slide': isSlid}" (click)="slideBack($event)">
+		<div class="item-flex">
+			<i class="material-icons">{{ item.icon }}</i>
+			<span>{{ item.title }}</span>
+			<div class="spacer"></div>
+			<span class="hours">{{ item.hours }}</span>
+			<i class="material-icons" (click)="slide(isSlid)">more_horiz</i>
+		</div>
+	</div>
+	<div class="item-options">
+		<div *ngIf="item.isActive" class="item-option stop">Stop</div>
+		<div *ngIf="!item.isActive" class="item-option edit">Edit</div>
+		<div class="item-option delete">Delete</div>
+	</div>
+</div>

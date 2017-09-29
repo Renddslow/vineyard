@@ -1,0 +1,75 @@
+.item-container {
+	width: 100%;
+	display: block;
+	position: relative;
+	height: 72px;
+}
+
+.list-item {
+  width: 100%;
+  display: block;
+  background: #f5f2f4;
+  border-bottom: 1px solid #eae8e2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .2s ease-out;
+	z-index: 1;
+}
+
+.list-item.slide {
+	left: -200px;
+}
+
+.list-item .item-flex {
+  display: flex;
+  padding: 1.5em 1em;
+  color: rgb(104, 95, 116);
+}
+
+.list-item.active {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  z-index: 5;
+  float:left;
+  background: #fff;
+  border-bottom: 0;
+}
+
+.item-flex span {
+  padding: 4px 10px;
+  font-weight: 100;
+	font-size: .8rem;
+}
+
+.list-item.active .item-flex span {
+  font-weight: 400;
+}
+
+.item-options {
+	width: 200px;
+	height: 72px;
+	top: 0;
+	right: 0;
+	position: absolute;
+	display: flex;
+}
+
+.item-options .item-option {
+	width: 50%;
+	text-align: center;
+	display: block;
+	padding-top: 1.65em;
+	color: #fff;
+}
+
+.item-option.edit {
+	background: #00B0FF;
+}
+
+.item-option.stop {
+	background: #FFC400;
+}
+
+.item-option.delete {
+	background: #FF5252;
+}

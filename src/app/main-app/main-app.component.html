@@ -1,0 +1,18 @@
+<div class="main-app" [ngClass]="{'moved': appMoved}" (click)="closeAll($event)">
+	<header>
+		<nav class="app-nav">
+			<i class="material-icons md-light" (click)="moveApp(appMoved)">menu</i>
+			<span>Week of August 20</span>
+			<div class="spacer"></div>
+			<i class="material-icons md-light" (click)="openMenu(menuOpened)">add</i>
+			<simple-menu [visible]="menuOpened"></simple-menu>
+		</nav>
+		<div class="hours-container">
+			<strong>100</strong>
+			<p>hours tracked</p>
+		</div>
+	</header>
+	<div class="log-list">
+		<list-item *ngFor="let item of items" [item]="item"></list-item>
+	</div>
+</div>

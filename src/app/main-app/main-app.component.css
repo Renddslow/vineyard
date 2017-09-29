@@ -1,0 +1,97 @@
+.main-app {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  transition: .2s ease-out;
+}
+
+.add {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.main-app.moved {
+  left: 45%;
+  transform: scale(.9);
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.main-app header {
+  height: 240px;
+  background: #A680B9;
+  background: -moz-linear-gradient(-20deg, #a680b9 0%, #8624b7 100%);
+  background: -webkit-linear-gradient(-20deg, #a680b9 0%,#8624b7 100%);
+  background: linear-gradient(160deg, #a680b9 0%,#8624b7 100%);
+}
+
+.main-app header nav.app-nav {
+  display: flex;
+  box-sizing: border-box;
+  padding: 1em;
+  position: relative;
+}
+
+.main-app header nav.app-nav span {
+  color: #fff;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+.material-icons {
+  cursor: pointer;
+	outline: none;
+}
+
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.main-app header .hours-container {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.main-app header .hours-container strong {
+  font-size: 6rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.main-app header .hours-container p {
+  font-weight: 100;
+  margin-top: 0;
+}
+
+nav.tab-strip {
+  width: 100%;
+  background: #CA9CE1;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+}
+
+.roundy {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #F3E0EC;
+  box-sizing: border-box;
+  padding: 2px;
+  color: rgb(243, 224, 236);
+  margin: 10px auto;
+}
+
+.log-list {
+  width: 100%;
+  display: block;
+  overflow-x: hidden;
+  min-height: calc(100vh - 240px);
+  background: #f5f2f4;
+}

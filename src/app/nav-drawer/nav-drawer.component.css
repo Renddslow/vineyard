@@ -1,0 +1,49 @@
+nav.drawer {
+  width: 100%;
+  display: block;
+  background: #fff;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+nav.drawer ul {
+  margin: 2em 0;
+  list-style: none;
+  padding: 0;
+}
+
+nav.drawer ul li,
+nav.drawer > a {
+  padding: .75rem 1.5em;
+  font-size: .8em;
+}
+
+nav.drawer > a {
+  display: block;
+  margin-top: 5em;
+}
+
+nav.drawer ul li.active {
+  border-left: 4px solid #CA9CE1;
+  box-sizing: border-box;
+  padding-left: calc(1.5em - 3px);
+}
+
+nav.drawer ul li a,
+nav.drawer a {
+  color: #685F74;
+  text-decoration: none;
+}
+
+nav.drawer .avatar {
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center center;
+  margin: 5em 1em 1em;
+}

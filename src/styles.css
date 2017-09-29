@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400,900');
+@import url(//fonts.googleapis.com/icon?family=Material+Icons);
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+	background: #222;
+}
+
+#wrapper {
+  max-width: 768px;
+  min-height: 100vh;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#wrapper.no-overflow {
+  overflow: hidden;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
