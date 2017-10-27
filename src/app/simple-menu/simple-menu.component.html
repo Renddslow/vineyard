@@ -1,6 +1,13 @@
 <div class="mdc-simple-menu" [ngClass]="{'mdc-simple-menu--open': visible}">
 	<ul class="mdc-simple-menu__items mdc-list">
-		<li class="mdc-list-item">Hello</li>
-		<li class="mdc-list-item">Hello</li>
+		<li class="mdc-list-item" (click)="addItem('work')"><i class="material-icons">work</i><span>In Office</span></li>
+		<li class="mdc-list-item" (click)="addItem('group_work')"><i class="material-icons">group_work</i><span>In-Office Meeting</span></li>
+		<li class="mdc-list-item" (click)="addItem('local_cafe')"><i class="material-icons">local_cafe</i><span>Off-Site Meeting</span></li>
+		<li class="mdc-list-item" (click)="addItem('favorite')"><i class="material-icons">favorite</i><span>Relationship Building</span></li>
+		<li class="mdc-list-item" (click)="addItem('local_hospital')"><i class="material-icons">local_hospital</i><span>Visitation</span></li>
+		<li class="mdc-list-item" (click)="addItem('fitness_center')"><i class="material-icons">fitness_center</i><span>Personal Development</span></li>
+		<li class="mdc-list-item" (click)="addItem('local_pharmacy')"><i class="material-icons">local_pharmacy</i><span>Sick Day</span></li>
+		<li class="mdc-list-item" (click)="addItem('airplanemode_active')"><i class="material-icons">airplanemode_active</i><span>Day Off</span></li>
+		<li class="mdc-list-item" (click)="addItem('home')"><i class="material-icons">home</i><span>Work From Home</span></li>
 	</ul>
 </div>

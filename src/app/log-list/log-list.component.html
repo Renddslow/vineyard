@@ -1,7 +1,7 @@
 <div class="item-container">
 	<div *ngIf="item" class="list-item" [ngClass]="{'active': item.isActive, 'slide': isSlid}" (click)="slideBack($event)">
 		<div class="item-flex">
-			<i class="material-icons">{{ item.icon }}</i>
+			<i class="material-icons">{{ item.type }}</i>
 			<span>{{ item.title }}</span>
 			<div class="spacer"></div>
 			<span class="hours">{{ item.hours }}</span>
@@ -9,8 +9,28 @@
 		</div>
 	</div>
 	<div class="item-options">
-		<div *ngIf="item.isActive" class="item-option stop">Stop</div>
-		<div *ngIf="!item.isActive" class="item-option edit">Edit</div>
-		<div class="item-option delete">Delete</div>
+		<div *ngIf="item.isActive" class="item-option stop" (click)="stop(item)">Stop</div>
+		<div *ngIf="!item.isActive" class="item-option edit" (click)="edit(item.id)">Edit</div>
+		<div class="item-option delete" (click)="delete(item)">Delete</div>
+	</div>
+</div>
+
+<div class="dark" *ngIf="displayEdit" (click)="closeEdit($event)">
+	<div class="item-edit">
+		<div class="item-edit-header">
+			<h2>Edit Entry</h2>
+			<div class="spacer"></div>
+			<i class="material-icons" (click)="closeEdit($event)">close</i>
+		</div>
+		<div class="edit-form">
+			<div class="form-group">
+				<input type="text" value="{{ item.title }}" id="item-title">
+				<label for="item-title">Title</label>
+			</div>
+			<div class="form-group">
+				<textarea rows="2" id="item-notes">{{ item.workedOn }}</textarea>
+				<label for="item-notes">Notes</label>
+			</div>
+		</div>
 	</div>
 </div>

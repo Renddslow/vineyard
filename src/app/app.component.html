@@ -1,5 +1,4 @@
-
-<div id="wrapper">
+<div id="wrapper" [ngClass]="{'no-overflow': appMoved}">
   <nav-drawer></nav-drawer>
-  <main-app></main-app>
+  <main-app [(appMoved)]="appMoved"></main-app>
 </div>

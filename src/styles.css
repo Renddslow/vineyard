@@ -27,3 +27,45 @@ body {
 .spacer {
   flex: 1 1 auto;
 }
+
+.form-group {
+	width: 90%;
+	display: block;
+	margin: 2em auto;
+	position: relative;
+}
+
+.form-group label {
+	font-size: 16px;
+	color: rgba(0,0,0,0.54);
+	padding: 16px 0 8px;
+	display: block;
+	bottom: 0;
+	position: absolute;
+	transition: .2s ease-out;
+}
+
+.form-group input,
+.form-group textarea {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid rgba(0,0,0,0.42);
+	font-size: 16px;
+	color: rgba(0,0,0,0.87);
+	padding-bottom: 8px;
+	box-sizing: border-box;
+	width: 100%;
+	resize: none;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+	bottom: 24px;
+	font-size: 12px;
+}
+
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+	bottom: 46px;
+	font-size: 12px;
+}

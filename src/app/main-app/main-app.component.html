@@ -2,13 +2,13 @@
 	<header>
 		<nav class="app-nav">
 			<i class="material-icons md-light" (click)="moveApp(appMoved)">menu</i>
-			<span>Week of August 20</span>
+			<span>Week of {{ month }} {{ day }}</span>
 			<div class="spacer"></div>
 			<i class="material-icons md-light" (click)="openMenu(menuOpened)">add</i>
 			<simple-menu [visible]="menuOpened"></simple-menu>
 		</nav>
 		<div class="hours-container">
-			<strong>100</strong>
+			<strong>{{ totalHours }}</strong>
 			<p>hours tracked</p>
 		</div>
 	</header>

@@ -73,3 +73,31 @@
 .item-option.delete {
 	background: #FF5252;
 }
+
+.dark {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	background: rgba(0,0,0,0.2);
+	z-index: 192;
+}
+
+.item-edit {
+	display: block;
+	width: 90%;
+	top: 35%;
+	left: 5%;
+	position: fixed;
+	background: #fff;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	z-index: 193;
+	box-sizing: border-box;
+	padding: 8px;
+}
+
+.item-edit-header {
+	display: flex;
+}
